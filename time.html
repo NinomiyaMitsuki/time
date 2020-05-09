@@ -65,7 +65,7 @@
       function update() {
         var date = new Date()
         var utc10DiffMinutes = date.getTimezoneOffset() + 600
-        date.setMinutes(date.getMinutes() + utc10DiffMinutes + 1)
+        date.setMinutes(date.getMinutes() + utc10DiffMinutes)
 
         var timeString = date.getHours() + ':' + ('0' + date.getMinutes()).slice(-2)
         var dateString = (date.getMonth() + 1) + '月' + date.getDate() + '日'
